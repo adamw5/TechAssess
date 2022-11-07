@@ -2,14 +2,12 @@ POST - https://demo.docusign.net/restapi/v2/accounts/12345678/envelopes
 
 
 {
-  "enforceSignerVisibility": true,
   "recipients": {
     "signers": [
       {
         "email": "theflash@jakedstest.xyz",
         "name": "Barry Allen",
-        "recipientId": 1,
-        "accessCode": "98371",
+        "recipientId": 1
         "tabs": {
           "signHereTabs": [
             {
@@ -25,6 +23,16 @@ POST - https://demo.docusign.net/restapi/v2/accounts/12345678/envelopes
         "email": "iamthebatman@jakedstest.xyz",
         "name": "Bruce Wayne",
         "recipientId": 2
+        "tabs": {
+          "signHereTabs": [
+            {
+              "xPosition": "125",
+              "yPosition": "125",
+              "documentId": "1",
+              "pageNumber": "1"
+            }
+          ]
+        }
       }
     ]
   },
